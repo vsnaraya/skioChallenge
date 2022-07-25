@@ -2,8 +2,8 @@
 
 
 # Prerequisites
-    - Node: >16
-    - npm > 8
+    - Node: >=16
+    - npm >= 8
     - rabbitMQ installed (https://www.rabbitmq.com/install-homebrew.html)
 
 
