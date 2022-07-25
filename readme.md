@@ -1,7 +1,7 @@
-# H1 Skio Backend Engineering Challenge 
+# Skio Backend Engineering Challenge 
 
 
-# prerequisite 
+# Prerequisites
     - Node: >16
     - npm > 8
     - rabbitMQ installed (https://www.rabbitmq.com/install-homebrew.html)
@@ -25,7 +25,7 @@
     Recieve.js
       - Wrapped the rate limited api call in logic to check if we are currently being rate limited. This logic runs every 1 second to check if it is being rate limited, if not check it will check if any messages are in the rabbitMQ queue and make API call if so.
 
-      - To check if rate limiting is in effect, it will keep  track of the time each request was sent in the last requestTimeLimit interval. Added logic to remove any requests if it is outside the last requestTimeLimit interval, since we no longer need to track those requests (Sliding Window Rate limit assumed)
+      - To check if rate limiting is in effect, it will keep  track of the time each request was sent in the last requestTimeLimit interval. Added logic to remove any requests if it is outside the last requestTimeLimit interval, since we no longer need to track those requests (Sliding Window Rate Limitting assumed)
 
 
     - Send.js 
